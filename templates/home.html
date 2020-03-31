@@ -1,5 +1,26 @@
 {% extends "layout.html" %} {% block content %} {% for post in posts %}
-<h1>{{post.title}}</h1>
-<p>By {{post.author}} on {{post.date_posted}}</p>
-<p>{{post.content}}</p>
+<article class="media content-section">
+  <div class="card-group">
+    <div class="card">
+      <img
+        style="width: 3rem;height: 3rem;"
+        class="card-img-top"
+        src="../static/khem.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+        <p class="article-content">{{ post.content }}</p>
+        <small class="text-muted"
+          >Author: <a class="mr-2" href="#"> {{ post.author }}</a></small
+        >
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"
+          >Last updated in {{ post.date_posted }}
+        </small>
+      </div>
+    </div>
+  </div>
+</article>
 {% endfor %} {% endblock content %}
