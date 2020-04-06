@@ -3,3 +3,4 @@
 * pip gets installed along with python installation. If needed to upgrade pip: python -m pip install --upgrade pip
 * pip install Flask-WTF (for flask forms)
 * pip install Flask-SQLAlchemy (contains flask specific extensions to work better with db )
+* pip install flask-bcrypt (password hashing)
