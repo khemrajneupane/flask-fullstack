@@ -4,3 +4,4 @@
 * pip install Flask-WTF (for flask forms)
 * pip install Flask-SQLAlchemy (contains flask specific extensions to work better with db )
 * pip install flask-bcrypt (password hashing)
+* pip install flask-login manage user session.
